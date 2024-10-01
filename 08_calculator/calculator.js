@@ -7,21 +7,32 @@ const subtract = function(a,b) {
 };
 
 const sum = function(numbers) {
+  result = 0;
   for(i =0 ; i < numbers.length; i++){
-    
+    result=result + numbers[i];
   }
+  return result;
 };
 
-const multiply = function() {
+const multiply = function(numbers) {
+  result = 1;
+  for(i =0 ; i < numbers.length; i++){
+    result=result * numbers[i];
+  }
+  return result;
 
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+	return Math.pow(a,b);
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	if(number == 1 || number == 0){
+    return 1;
+  }else{
+    return number * factorial(number-1)
+  }
 };
 
 // Do not edit below this line
