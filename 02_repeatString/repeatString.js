@@ -1,12 +1,13 @@
-const repeatString = function(word,num) {
+const repeatString = function (word, num) {
+    let result = "";
     if(num < 0){
         return "ERROR";
     }
-    repeatedWord = "";
-    for(i=0;i<num;i++){
-        repeatedWord += word;
+    for (i = 0; i < num; i++){
+        result += word;
     }
-    return repeatedWord;
+
+    return result;
 };
 
 // Do not edit below this line

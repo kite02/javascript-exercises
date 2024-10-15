@@ -1,18 +1,12 @@
 const removeFromArray = function (numbers, ...args) {
 
     let newArray = [];
-    let j = 0;
-    while (j < args.length) {
-        for (i = 0; i < numbers.length; i++) {
-            if (numbers[i] == args[j]) {
-                continue;
-            } else {
-                newArray.push(numbers[i]);
-            }
-        }
-        j++;
-    }
+    numbers.forEach(element => {
+        if(!args.includes(element))
+        newArray.push(element);
+    });
     return newArray;
+    
 };
 
 // Do not edit below this line
